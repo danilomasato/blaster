@@ -1,0 +1,60 @@
+@media screen and (max-width:768px) {
+
+	#logo {
+		width: 250px;
+		margin-left: 15px
+	}
+	#nav {
+		width: 0;
+		height: 100%;
+		padding: 0;
+		right: 0;
+		left: inherit;
+		margin: 60px 0 0;
+		z-index: 99999;
+		transition: width .6s ease
+	}
+	#nav ul {
+		overflow: hidden
+	}
+	.nav-show {
+		width: 250px!important
+	}
+	#nav>ul>li,
+	#nav>ul>li>a {
+		width: 100%
+	}
+	#nav>ul>li {
+		display: block;
+		clear: both;
+		border-bottom: 1px solid #AB3739
+	}
+	#nav>ul>li>a.active,
+	#nav>ul>li>a:hover {
+		border: none
+	}
+	#nav .sub-menu .side-bar {
+		display: block;
+		padding-left: 10px
+	}
+	#nav .sub-menu .side-bar>li>a {
+		padding: 5px 0;
+		z-index: 99999;
+		text-decoration: none;
+		letter-spacing: 0;
+		font: 400 13px/normal ralewayMedium, Arial;
+		text-rendering: optimizeLegibility;
+		border-bottom: none;
+		color: #333;
+		display: block
+	}
+	#nav>ul>li>ul {
+		width: 100%;
+		position: initial
+	}
+	.btnMobile {
+		display: block;
+		float: right;
+		margin-right: 15px
+	}
+}

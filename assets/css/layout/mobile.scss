@@ -1,0 +1,265 @@
+@media screen and (max-width:768px) {
+    #footer>.center>.full>.wrap-right,
+    #logo img,
+    #nav ul,
+    .center {
+        width: 100%
+    }
+
+    #header .contact,
+    #sideBar,
+    .reveal-modal {
+        display: none!important
+    }
+
+    [class*=col-] {
+        margin: 0;
+        padding: 0
+    }
+
+    #products>.center .full {
+        margin: 0;
+        padding: 15px 15px 50px
+    }
+
+    .breadcrumb {
+        width: 100%;
+        margin: 0 0 0 -5px
+    }
+
+    .breadcrumb ol { 
+        padding-left: 30px;
+    }
+
+    .breadcrumb ol li {
+        width: fit-content;
+    } 
+
+    .center {
+        margin: initial;
+    }
+
+    #header { min-height: 70px; }
+
+    #header .header-info {
+        float: left;
+        width: 250px;
+        padding-left: 10px;
+    }
+
+    #nav {
+        width: 0;
+        height: -webkit-fill-available;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99999;
+        transition: width .6s ease
+    }
+
+    #nav ul {
+        overflow: hidden;
+        padding-top: 20px;
+    }
+
+    .nav-show {
+        width: 250px!important;
+    }
+
+    #nav > ul > li ,
+    #nav > ul > li > a {
+        width: 100%;
+    }
+
+    #nav > ul > li {
+        display: block;
+        clear: both;
+        padding: 0;
+        border-bottom: 1px solid #434e67;
+    }
+
+    #nav > ul > li:first-child  {
+        border-top: 1px solid #434e67;
+    }
+
+    #nav > ul > li >a.active,
+    #nav > ul > li >a:hover {
+        border-left: 2px solid #9e1c1c;
+        border-bottom: none;
+    }
+
+    #nav .sub-menu .side-bar {
+        display: block;
+        padding-left: 10px;
+    }
+
+    #nav .sub-menu .side-bar>li>a {
+        padding: 5px 0;
+        z-index: 99999;
+        text-decoration: none;
+        letter-spacing: 0;
+        font: 400 13px/normal ralewayMedium, Arial;
+        text-rendering: optimizeLegibility;
+        border-bottom: none;
+        color: #333;
+        display: block;
+    }
+
+    #nav .subitems {
+        width: 100%;
+        position: initial;
+    }
+
+    #nav .subitems .side-bar a {
+        height: inherit;
+        line-height: 20px;
+        padding: 7px 25px;
+    }
+    
+    .btnMobile {
+        display: block;
+        float: right;
+        cursor: pointer;
+        margin: 10px 15px 0 15px;
+    }
+
+    #banner {
+        height: 200px;
+        margin-top: 0px;
+    }
+
+    #banner .full>.center>img,
+    #banner div {
+        width: 100%!important
+    }
+
+    #highlight {
+        height: inherit;
+    }
+
+    #highlight .highlight-items {
+        grid-row-gap: 25px;
+        grid-template-columns: inherit;
+
+    }
+
+    #highlight .highlight-items li {
+        padding: 0px 30px;
+    }
+
+    #featured {
+        width: 100%;
+        height: auto
+    }
+    #featured .list {
+        display: none;
+        width: 100%;
+        height: auto;
+        padding: 20px
+    }
+    #featured .list>li.noMargin {
+        margin: 20px 0 0!important
+    }
+    #products-list {
+        padding: 20px 0 0
+    }
+    #products-list article .wrap {
+        width: 100%;
+        margin: 0
+    }
+    #featured>.center>.full {
+        padding: 0
+    }
+    #featured .side-featured {
+        width: 100%;
+        margin: 0;
+        padding: 0
+    }
+
+    #footer {
+        height: inherit;
+        padding: 30px;
+        box-sizing: border-box
+    }
+
+    #footer .footer-items {
+        padding: 15px 0;
+        grid-template-columns: inherit;
+        grid-row-gap: 25px;
+    }
+
+    #products-list h1 {
+        padding-left: 0;
+        margin: 0 0 10px
+    }
+    #products-list article {
+        margin: 0 0 5px;
+        padding: 0 10px
+    }
+    #products-list article>img {
+        float: none;
+        display: block;
+        width: 120px;
+        margin: 0 auto;
+        padding: 20px 0
+    }
+    #products-list article .wrap header>h1 {
+        width: 240px
+    }
+    #products-list article .wrap>.catalogo-manual {
+        padding: 0 0 20px
+    }
+    .catalogo-general>.wrap>.btn,
+    .catalogo-general>td>.wrap>.btn {
+        border-radius: 0;
+        height: 35px;
+        line-height: 35px
+    }
+    #products-list article .wrap header>span {
+        font-size: 15px
+    }
+    #products-list>article>.wrap>.catalogo-general {
+        margin: 6px 0 27px
+    }
+    #historia .historia {
+        margin: 20px 0 0
+    }
+    #historia .historia li>img {
+        width: 100%;
+        height: auto!important
+    }
+    #historia .historia>li>.border-right,
+    #historia .historia>li>div {
+        width: 100%;
+        height: auto;
+        padding: 30px 20px 20px
+    }
+    #historia .historia>li>div>span {
+        width: 100%!important
+    }
+    #historia .historia>li {
+        height: auto
+    }
+    #mapa_representantes>img {
+        width: 100%;
+        height: 100%
+    }
+    #col-representantes {
+        padding: 10px 0 0
+    }
+    #mapa_representantes .map-mobile,
+    .map-mobile {
+        display: block
+    }
+    #contact .endereco,
+    #mapa_representantes .map-web {
+        display: none
+    }
+    #formLocation .txtEnderecoPartida,
+    #mapa {
+        width: 100%
+    }
+    #contact>.center>.full {
+        margin: 0
+    }
+}

@@ -1,0 +1,379 @@
+/***
+Centraliza All
+***/
+.center {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.content {
+    display: grid;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    grid-column-gap: 30px;
+    grid-template-columns: 22% 75%;
+}
+
+#header {
+    position: relative;
+    z-index: 100;
+    min-height: 120px;
+}
+
+#header .header-info {
+    min-height: 70px;
+    padding: 20px 0;
+}
+
+#header #logo {
+    float: left;
+}
+
+#header .contact {
+    float: right;
+    height: 17px;
+    margin: 8px 0 0 0;
+    letter-spacing: 0.3px;
+}
+
+#header .contact li { 
+    float: left; 
+}
+
+#header .contact li:last-child:after {
+    content: '';
+    padding: 0;
+}
+
+#header .contact li:after { 
+    content: '/';
+    padding: 0 8px;
+}
+
+#nav {
+    float: left;
+    clear: both;
+    width: 100%;
+    height: 50px;
+}
+
+#nav .nav-content,
+#nav.nav-bg {
+    background-color: #414f62; // Old browsers
+    @include filter-gradient(#414f62, #283443, 0); // IE6-9
+    @include linear-gradient(top, #414f62,#283443);
+}
+
+.btnMobile {
+    display: none;
+    color: #5d5d5d;
+    font-size: 28px;
+    background: transparent;
+}
+
+#nav ul {
+    height: 100%;
+}
+
+#nav li {
+    float: left;
+    position: relative;
+    padding: 0 17px;
+    cursor: pointer;
+}
+
+#nav > li:nth-child(1) { padding-left: 0; }
+
+#nav li .subitems {
+    display: none;
+}
+
+#nav .nav-content > li:hover .subitems {
+    display: block;
+}
+
+#nav li a {
+    float: left;
+    height: 50px;
+    padding: 0 25px;
+    color: #fff;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+#nav li a.active, 
+#nav li a:hover {
+    box-sizing: border-box;
+    background: #414f62;
+    border-bottom: 2px solid #9e1c1c;
+}
+
+#banner {
+    position: relative;
+    height: 460px;
+    margin-top: -26px;
+    background: #000;
+}
+
+#highlight {
+    width: 100%;
+    height: 470px;
+    background: url('../img/bgproducthome.jpg');
+}
+
+#highlight .highlight-items {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 30px 0;
+    color: #fff;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+#highlight .highlight-items li {
+    padding-right: 75px;
+}
+
+#highlight .highlight-items li:last-child {
+    padding-right: 0;
+}
+
+#highlight .highlight-items h2:after {
+    content: '';
+    display: block;
+    margin: 7px 0 25px 0;
+    width: 85px;
+    height: 3px;
+    background: #9e1c1c;
+}
+
+#footer {
+    width: 100%;
+    height: 400px;
+    background: #283443;      
+}
+
+#footer .footer-items {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 65px 0;
+    color: #fff;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+#footer .footer-items li {
+    padding-right: 60px;
+}
+
+#footer .footer-items li:last-child {
+    padding-right: 0;
+}
+
+#footer .footer-items h4 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#footer .footer-items h4:after {
+    content: '';
+    display: block;
+    margin: 7px 0 25px 0;
+    width: 85px;
+    height: 3px;
+    background: #9e1c1c;
+}
+
+#footer .company-information {
+    display: grid;
+    grid-row-gap: 25px;
+    grid-template-rows: max-content;
+}
+
+#footer .company-information small {
+    display: block;
+    color: #636c77;
+    font-size: 12px;
+}
+
+.breadcrumb {
+    height: 25px;
+    line-height: 25px;
+    color: #929292;
+    font-size: 10px;
+    font-style: italic;
+    background: #f5f5f5;
+}
+
+.breadcrumb ol { 
+    padding-left: 20px; 
+}
+
+.separator {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.separator h1 {
+    color: #283443;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.separator .separator-line {
+    border: 0;
+    margin: 0;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.separator .separator-line:after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 120px;
+    height: 2px;
+    margin-top: 15px;
+    background: #283443;
+}
+
+#sideBar {
+    width: 220px;
+    padding: 35px 25px;
+    background: #f5f5f5;
+}
+
+#sideBar li a {
+    display: block;
+    width: 100%;
+    color: #666;
+    font-size: 13px;
+    line-height: 18px;
+    padding: 6px 0;
+}
+
+#products {
+    float: left;
+    width: 100%;
+}
+
+#products .product {
+    float: left;
+    width: 250px;
+    min-height: 330px;
+    padding: 0px 30px;
+    padding-top: 30px;
+    border-right: 1px solid #d9d9d9;
+}
+
+#products .otherInfo {
+    float: left;
+    clear: both;
+}
+
+#products .otherInfo .separator {
+    margin-bottom: 20px;
+}
+
+#products .otherInfo .subtitle {
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold; 
+}
+
+#products.turbine .catalogo-general { display: none; }
+
+#products.turbine .product {
+    border-bottom: 1px solid #d9d9d9;
+}
+
+#products .product:nth-child(3n+0) { border-right: 0; }
+
+#products .product img {
+    display: block;
+    margin: 0 auto; 
+}
+
+#products .product .title {
+    color: #283443;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+#products .product .title:after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 75px;
+    height: 2px;
+    margin-top: 15px;
+    background: #283443;
+}
+
+#products .product .description {
+    color: #666;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+#contact {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 30% 67%;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #585858; 
+}
+
+.endereco li {
+    padding: 16px 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+.endereco .title {
+    color: #283443;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width:1024px) {
+    #nav li .subitems {
+        position: absolute;
+        margin-top: 50px;
+        padding: 20px 0;
+        height: inherit;
+        width: 240px;
+        z-index: 99999;
+        background: #414f62;
+    }
+
+    #nav .subitems a {
+        height: inherit;
+        line-height: 20px;
+        padding: 7px 25px;
+    }
+    
+    #sideBar li.active > a {
+        margin-bottom: 12px;
+        border-bottom: 1px solid #d9d9d9;
+    }
+
+    #sideBar li.active > a:after {
+        content: "";
+        display: block;
+        width: 33px;
+        height: 3px;
+        position: absolute;
+        margin-top: 5px;
+        background: #414c5b;
+    }
+}
+
+
+

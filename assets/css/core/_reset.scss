@@ -1,0 +1,59 @@
+/*---- RESETS ------------------------------------------------------------------------------*/
+html, body, span, applet, object, iframe,
+h1, h2, h3, h4, h6, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  outline:none;
+  outline:hidden;
+  vertical-align: baseline;
+  list-style: none;
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+p { padding: 10px 0px; }
+h2 { font-size: 15px; }
+a { 
+  color: #666666;
+  text-decoration: none;
+}
+
+/*---- BODY SETTINGS -----------------------------------------------------------------------*/
+body { 
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  color: #666666;
+  font: normal 13px/normal "raleway", bmw Pro;
+}
+
+$green: #7FA025;
+$blue-light: #d7e6d1;
+$blue: #2f3844;
+$gray: #333333;
+$gray-light: #585858;
+$black: #000;
+$white: #fff;

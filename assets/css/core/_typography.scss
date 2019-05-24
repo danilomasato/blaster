@@ -1,0 +1,68 @@
+/*****************************************************************************************************
+************************ FONTS CLASSES & TIPOGRAFIA **************************************************
+*****************************************************************************************************/
+@font-face {
+  font-family: 'raleway';
+   src: url('fonts/raleway-regular-webfont.eot');
+    src: url('fonts/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('fonts/raleway-regular-webfont.woff') format('woff'),
+         url('fonts/raleway-regular-webfont.ttf') format('truetype'),
+         url('fonts/raleway-regular-webfont.svg#amatic_scregular') format('svg');
+
+  font-weight: normal;
+  font-style: normal;
+  /*-webkit-font-smoothing: antialiased;*/
+  font-smooth: subpixel-antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+@font-face {
+  font-family: 'ralewayMedium';
+    src: url('fonts/raleway-medium-webfont.eot');
+    src: url('fonts/raleway-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/raleway-medium-webfont.woff2') format('woff2'),
+         url('fonts/raleway-medium-webfont.woff') format('woff'),
+         url('fonts/raleway-medium-webfont.ttf') format('truetype'),
+         url('fonts/raleway-medium-webfont.svg#goonregular') format('svg');
+
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  font-smooth: subpixel-antialiased;
+}
+
+@font-face {
+  font-family: 'ralewayBold';
+    src: url('fonts/raleway-bold-webfont.eot');
+    src: url('fonts/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/raleway-bold-webfont.woff2') format('woff2'),
+         url('fonts/raleway-bold-webfont.woff') format('woff'),
+         url('fonts/raleway-bold-webfont.ttf') format('truetype'),
+         url('fonts/raleway-bold-webfont.svg#goonregular') format('svg');
+
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  font-smooth: subpixel-antialiased;
+}
+
+/*.title {
+	color: #2f3844;
+	text-transform: uppercase;
+	font: normal 24px/25px "raleway", Georgia, Arial, sans-serif;
+}
+
+.title > strong {
+  font: normal 27px/normal "ralewayBold", Arial;
+}
+
+.subtitles {
+	color: #6d7681;
+	font: normal 18px/normal "raleway", arial;
+	font: normal 18px/normal "raleway", arial\0/ !important;
+}*/
+
+

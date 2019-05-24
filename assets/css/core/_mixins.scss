@@ -1,0 +1,24 @@
+@mixin border-radius ($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin linear-gradient($valign, $from, $to) {
+  background: $to;
+    background: -moz-linear-gradient($valign, $from 0%, $to 100%);
+    background: -webkit-gradient(linear, left $valign, left bottom, color-stop(0%,$from), color-stop(100%,$to));
+    background: -webkit-linear-gradient($valign, $from 0%,$to 100%);
+    background: -o-linear-gradient($valign, $from 0%,$to 100%);
+    background: linear-gradient(to bottom, $from 0%,$to 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#{$from}, endColorstr=#{$to})
+}
+
+@mixin filter-gradient($from, $to, $valign) {
+  -webkit-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$from, endColorstr=$to,GradientType=$valign );;
+     -moz-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$from, endColorstr=$to,GradientType=$valign );;
+       -o-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$from, endColorstr=$to,GradientType=$valign );;
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$from, endColorstr=$to,GradientType=$valign );;
+}
