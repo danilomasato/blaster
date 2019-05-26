@@ -56,7 +56,9 @@
         },
         nav: function () {
             var nav = document.querySelectorAll('#nav > ul > li a'),
-                products = ['rotametro','calibracao','calha-parshall','medidor'];
+                products = ['rotametro','calibracao','calha-parshall','medidor'],
+                title = document.querySelector('.separator h1'),
+                breadcrumb = document.querySelector('.breadcrumb .active');
 
                 products.forEach(function(item){
                     if(location.pathname.includes(item)){
@@ -67,6 +69,11 @@
             nav.forEach(function(item, index) {
                 if (location.pathname.includes(item.getAttribute('data-active')) || index == products) {
                     item.classList.add('active');
+
+                    //Inseri title no breadcrumb. 
+                    if (title && breadcrumb) {
+                        breadcrumb.innerHTML = '» ' + title.innerText;
+                    }
                 }
             });
         },
