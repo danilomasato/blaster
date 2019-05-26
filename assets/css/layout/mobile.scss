@@ -3,7 +3,12 @@
     #logo img,
     #nav ul,
     .center {
-        width: 100%
+        width: 100%;
+    }
+
+    .content {
+        display: inline-block;
+        padding: 0 25px;
     }
 
     #header .contact,
@@ -23,11 +28,12 @@
     }
 
     .breadcrumb {
-        width: 100%;
-        margin: 0 0 0 -5px
+        margin-bottom: 30px;
     }
 
     .breadcrumb ol { 
+        float: left;
+        margin-top: -10px;
         padding-left: 30px;
     }
 
@@ -151,29 +157,40 @@
         width: 100%;
         height: auto
     }
+
     #featured .list {
         display: none;
         width: 100%;
         height: auto;
         padding: 20px
     }
+
     #featured .list>li.noMargin {
         margin: 20px 0 0!important
     }
+
     #products-list {
         padding: 20px 0 0
     }
+
     #products-list article .wrap {
         width: 100%;
         margin: 0
     }
+
     #featured>.center>.full {
         padding: 0
     }
+
     #featured .side-featured {
         width: 100%;
         margin: 0;
         padding: 0
+    }
+
+    #products .product {
+        width: 100%;
+        border-right: 0;
     }
 
     #footer {
