@@ -46,7 +46,7 @@
 
         },
         sideBar: function () {
-            var sideBar = document.querySelectorAll('#sideBar > li');
+            var sideBar = document.querySelectorAll('#sideBar li');
                 
             sideBar.forEach(function(item) {
                 if (location.pathname.includes(item.getAttribute('data-active'))) {

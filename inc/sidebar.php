@@ -8,19 +8,19 @@
             Rotâmetros
         </a>
         <ul class="side-bar">
-            <li>
+            <li data-active="rotametro-bl">
                 <a href="<?php echo $url ?>rotametro-bl"> 
                     Rotâmetro BL
                 </a>
             </li>
 
-            <li>
+            <li data-active="rotametro-bli">
                 <a href="<?php echo $url ?>rotametro-bli"> 
                     Rotâmetro BLI
                 </a>
             </li>
 
-            <li>
+            <li data-active="rotametro-blip">
                 <a href="<?php echo $url ?>rotametro-blip"> 
                     Rotâmetro BLIP
                 </a>

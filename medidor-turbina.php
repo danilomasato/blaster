@@ -26,7 +26,7 @@
     <meta name="Country" content="Brazil">
 
 </head>
-<body data-ng-app="app">
+<body>
     <?php include "inc/header.php"; ?>
     <?php include "inc/breadcrumb.php" ?>
 
