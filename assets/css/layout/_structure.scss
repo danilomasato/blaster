@@ -282,6 +282,7 @@ Centraliza All
 }
 
 #products .otherInfo .separator {
+    position: relative;
     margin-bottom: 20px;
 }
 
@@ -289,6 +290,7 @@ Centraliza All
     font-size: 16px;
     text-align: center;
     font-weight: bold; 
+    padding-bottom: 10px;
 }
 
 #products.turbine .catalogo-general { display: none; }
