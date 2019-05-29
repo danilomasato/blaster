@@ -14,29 +14,35 @@
 		z-index: 99999;
 		transition: width .6s ease
 	}
+
 	#nav ul {
-		overflow: hidden
+		overflow: hidden;
 	}
 	.nav-show {
 		width: 250px!important
 	}
-	#nav>ul>li,
-	#nav>ul>li>a {
+
+	#nav > ul > li,
+	#nav > ul > li > a {
 		width: 100%
 	}
-	#nav>ul>li {
+
+	#nav > ul > li {
 		display: block;
 		clear: both;
 		border-bottom: 1px solid #AB3739
 	}
-	#nav>ul>li>a.active,
-	#nav>ul>li>a:hover {
+
+	#nav > ul > li > a.active,
+	#nav > ul > li > a:hover {
 		border: none
 	}
+
 	#nav .sub-menu .side-bar {
 		display: block;
-		padding-left: 10px
+		padding-left: 10px;
 	}
+
 	#nav .sub-menu .side-bar>li>a {
 		padding: 5px 0;
 		z-index: 99999;
@@ -48,10 +54,12 @@
 		color: #333;
 		display: block
 	}
-	#nav>ul>li>ul {
+
+	#nav > ul > li > ul {
 		width: 100%;
 		position: initial
 	}
+
 	.btnMobile {
 		display: block;
 		float: right;

@@ -11,18 +11,39 @@
         bind: function() {
 
            document.querySelector(".btnMobile").addEventListener("click",function(){
-                var nav = document.querySelector("#nav"), 
-                    subMenu = document.querySelector(".sub-menu"),
-                    link = document.querySelector("#nav li > a"),
-                    navOverlay = document.querySelector("#nav-overlay");
-                    nav.classList.toggle("nav-show");
-                    navOverlay.classList.toggle("overlay-show");
+                var nav = document.querySelector('#nav'), 
+                    subMenu = document.querySelector('.sub-menu'),
+                    navLinks = nav.querySelectorAll('li'),
+                    navOverlay = document.querySelector('#nav-overlay');
+                    nav.classList.toggle('nav-show');
+                    navOverlay.classList.toggle('overlay-show');
+                    
+                    //Percorre todos os itens do menu.
+                    navLinks.forEach(function(link) {
+                        var submenu = link.querySelector('.subitems') || false;
 
-                    console.log('click', nav.classList.contains("nav-show"));
+                        // link.querySelector('a').classList.remove('active');
+                        
+                        //adiciona evento de click.
+                        link.addEventListener('click', function(e) {
+                            e.preventDefault();
+
+                            nav.querySelector('a.active').classList.remove('active');
+                            this.querySelector('a').classList.toggle('active');
+
+                            if (submenu) {
+                                submenu.classList.toggle('subitems-show');
+                            }
+                        });
+                    });
+                    
+
+                    // console.log('click', nav.classList.contains('nav-show'));
             });
 
+            //Percorre todos os itens do accordion.
             document.querySelectorAll(".accordion-section-title").forEach(function(item, i) {
-
+                //adiciona evento de click.
                 item.addEventListener('click', function(e) {
                     e.preventDefault();
 
