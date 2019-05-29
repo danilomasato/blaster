@@ -110,14 +110,21 @@ Centraliza All
 
 #nav li a[data-active='produtos']:after,
 #nav li a[data-active='serviços']:after {
-    content: "ˇ";
+    content: "⌃";
     float: right;
     height: 100%;
-    font-size: 18px;
-    line-height: 60px;
+    font-size: 12px;
+    transform: rotate(180deg);
     margin-left: 4px;
+    line-height: 55px;
 }
 
+#nav li a.active[data-active='produtos']:after,
+#nav li a.active[data-active='serviços']:after,
+#nav li a[data-active='produtos']:hover:after,
+#nav li a[data-active='serviços']:hover:after {
+    line-height: inherit;
+}
 
 #banner {
     position: relative;
