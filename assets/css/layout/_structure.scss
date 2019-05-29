@@ -108,6 +108,17 @@ Centraliza All
     border-bottom: 2px solid #9e1c1c;
 }
 
+#nav li a[data-active='produtos']:after,
+#nav li a[data-active='serviços']:after {
+    content: "ˇ";
+    float: right;
+    height: 100%;
+    font-size: 18px;
+    line-height: 60px;
+    margin-left: 4px;
+}
+
+
 #banner {
     position: relative;
     height: 460px;
