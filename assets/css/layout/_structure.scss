@@ -244,7 +244,7 @@ Centraliza All
     font-size: 18px;
     font-weight: bold;
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 13px;
 }
 
 .separator .separator-line {
@@ -285,7 +285,7 @@ Centraliza All
     width: 100%;
 }
 
-#products .product {
+#products .product-list {
     float: left;
     width: 250px;
     min-height: 330px;
@@ -313,18 +313,20 @@ Centraliza All
 
 #products.turbine .catalogo-general { display: none; }
 
-#products.turbine .product {
+#products.turbine .product-list {
     border-bottom: 1px solid #d9d9d9;
 }
 
-#products .product:nth-child(3n+0) { border-right: 0; }
+#products .product-list:nth-child(3n+0) { border-right: 0; }
 
-#products .product img {
+#products .product img,
+#products .product-list img {
     display: block;
     margin: 0 auto; 
 }
 
-#products .product .title {
+#products .product .title,
+#products .product-list .title {
     color: #283443;
     font-size: 16px;
     text-align: center;
@@ -332,7 +334,8 @@ Centraliza All
     margin: 20px 0;
 }
 
-#products .product .title:after {
+#products .product .title:after,
+#products .product-list .title:after {
     content: '';
     display: block;
     margin: 0 auto;
@@ -343,10 +346,71 @@ Centraliza All
     background: #283443;
 }
 
-#products .product .description {
+#products .product-list .description {
     color: #666;
     font-size: 13px;
     line-height: 18px;
+}
+
+#products .product {
+    float: left;
+    width: 100%;
+}
+
+#products .product .product-photo {
+    float: left;
+}
+
+#products .product .title {
+    color: #666;
+}
+
+#products .product .title:after {
+    background: #666;
+}
+
+#products .product .product-datasheet {
+    float: left;
+    width: 500px;
+    padding-left: 30px;
+    border-left: 1px solid #ccc;
+    margin-left: 30px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#products .product .catalog-general {
+    float: left;
+    width: 100%;
+}
+
+#products .product .catalog-general li:nth-child(1) {
+    width: 100%;
+    margin-top: 0;
+}
+
+#products .product .catalog-general li {
+    float: left;
+    margin-top: 20px;
+}
+
+#products .product .catalog-general h3 {
+    margin-bottom: 10px;
+}
+
+#products .product .btn {
+    border-radius: 5px;
+    color: #6a6a6a;
+    font-size: 11px;
+    text-transform: none;
+    height: 35px;
+    line-height: 35px;
+    background: #283443;
+    background: rgb(238,238,238);
+    background: -moz-linear-gradient(top, rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+    background: linear-gradient(to bottom, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
 }
 
 #contact {

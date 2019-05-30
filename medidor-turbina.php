@@ -39,7 +39,7 @@
         <?php include "inc/sidebar.php" ?>
 
         <section id="products" class="turbine">    
-            <article class="product">
+            <article class="product-list">
                 <img itemprop="image" src="<?php echo $url ?>assets/img/medidor-de-vazao-tipo-turbina-modelo-bllc.jpg" alt="Medidor de Vazão BLLC 12" title="Medidor de Vazão BLLC 12">
                 <div class="wrap">
                     <header>
@@ -55,7 +55,7 @@
                     </div>
                 </div>
             </article>
-            <article class="product">
+            <article class="product-list">
                 <img itemprop="image" src="<?php echo $url ?>assets/img/medidor-de-vazao-tipo-turbina-modelo-bllc.jpg" alt="Medidor de Vazão BLLC 19" title="Medidor de Vazão BLLC 19">
                 <div class="wrap">
                     <header>
@@ -72,7 +72,7 @@
                 </div>
             </article>
 
-            <article class="product">
+            <article class="product-list">
                 <img itemprop="image" src="<?php echo $url ?>assets/img/medidor-de-vazao-tipo-turbina-modelo-bllc.jpg" alt="Medidor de Vazão BLLC 25" title="Medidor de Vazão BLLC 25">
                 <div class="wrap">
                     <header>
@@ -89,7 +89,7 @@
                 </div>
             </article>
 
-            <article class="product">
+            <article class="product-list">
                 <img itemprop="image" src="<?php echo $url ?>assets/img/medidor-de-vazao-tipo-turbina-modelo-bllc.jpg" alt="Medidor de Vazão BLLC 32" title="Medidor de Vazão BLLC 32">
                 <div class="wrap">
                     <header>
@@ -105,7 +105,7 @@
                     </div>
                 </div>
             </article>
-            <article class="product">
+            <article class="product-list">
                 <img itemprop="image" src="<?php echo $url ?>assets/img/medidor-de-vazao-tipo-turbina-modelo-bllc.jpg" alt="Medidor de Vazão BLLC 38" title="Medidor de Vazão BLLC 38">
                 <div class="wrap">
                     <header>
@@ -121,7 +121,7 @@
                     </div>
                 </div>
             </article>
-            <article class="product">
+            <article class="product-list">
                 <img itemprop="image" src="<?php echo $url ?>assets/img/medidor-de-vazao-tipo-turbina-modelo-bllc.jpg" alt="Medidor de Vazão BLLC 50" title="Medidor de Vazão BLLC 50">
                 <div class="wrap">
                     <header>
@@ -137,7 +137,7 @@
                     </div>
                 </div>
             </article>
-            <article class="product">
+            <article class="product-list">
                 <img itemprop="image" src="<?php echo $url ?>assets/img/medidor-de-vazao-tipo-turbina-modelo-bllc.jpg" alt="Medidor de Vazão BLLC 63" title="Medidor de Vazão BLLC 63">
                 <div class="wrap">
                     <header>
@@ -153,7 +153,7 @@
                     </div>
                 </div>
             </article>
-            <article class="product">
+            <article class="product-list">
                 <img itemprop="image" src="<?php echo $url ?>assets/img/medidor-de-vazao-tipo-turbina-modelo-bllc.jpg" alt="Medidor de Vazão BLLC 75" title="Medidor de Vazão BLLC 75">
                 <div class="wrap">
                     <header>
@@ -169,7 +169,7 @@
                     </div>
                 </div>
             </article>
-            <article class="product">
+            <article class="product-list">
                 <img itemprop="image" src="<?php echo $url ?>assets/img/medidor-de-vazao-tipo-turbina-modelo-bllc.jpg" alt="Medidor de Vazão BLLC 100" title="Medidor de Vazão BLLC 100">
                 <div class="wrap">
                     <header>
@@ -185,7 +185,7 @@
                     </div>
                 </div>
             </article>
-            <article class="product">
+            <article class="product-list">
                 <img itemprop="image" src="<?php echo $url ?>assets/img/medidor-de-vazao-tipo-turbina-modelo-bllc.jpg" alt="Medidor de Vazão BLLC 150" title="Medidor de Vazão BLLC 150">
                 <div class="wrap">
                     <header>
@@ -201,7 +201,7 @@
                     </div>
                 </div>
             </article>
-            <article class="product">
+            <article class="product-list">
                 <img itemprop="image" src="<?php echo $url ?>assets/img/medidor-de-vazao-tipo-turbina-modelo-bllc.jpg" alt="Medidor de Vazão BLLC 200" title="Medidor de Vazão BLLC 200">
                 <div class="wrap">
                     <header>

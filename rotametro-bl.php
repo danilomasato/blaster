@@ -31,22 +31,27 @@
     <?php include "inc/breadcrumb.php" ?>
 
     <div class="separator center">
-        <h1>Medidor de vazão tipo rotâmetro</h1>
+        <h1> Medidor de vazão tipo Rotâmetro </h1>
         <hr class="separator-line">
     </div>
     
     <div class="content center">
         <?php include "inc/sidebar.php" ?>
 
-        <section id="products">    
-            <article>
-                <h1>Rotâmetro BL</h1>
-                <hr>
+        <section id="products"> 
 
-                <img src="<?php echo $url ?>assets/img/rotametro.jpg" alt="rotametro bl" title="rotametro bl">
-                <div class="wrap">
+            <article class="product">
+                <div class="product-photo">
+                    <img src="<?php echo $url ?>assets/img/rotametro.jpg" width="100" height="135" alt="rotametro" title="rotametro">
+                    <div class="wrap">
+                        <header>
+                            <h2 class="title"> Rotâmetro modelo BL </h2>
+                        </header>
+                    </div>
+                </div>
+
+                <div class="product-datasheet">
                     <header>
-                        <h2> Medidor de vazão tipo Rotâmetro BL </h2>
                         <span>
                             Medidor de vazão instantânea de area variável, conhecido como dispositivo ou <strong>rotamtro bl</strong>, sua função é indicar volume em tempo real, sua aplicação é em instalações indústriais de distribuições de líquidos e gases, sendo um ótimo instrumento dentro da indústria alimentícia, tratamento térmico, saneamento e etc...
 
@@ -76,35 +81,36 @@
                         </p>
                     </span>
 
-                    <div class="catalogo-general full">
-                        <div class="wrap">
-                            <a href="javascript:;" class="btn btn-budget fleft noMargin" data-reveal-id="myModal"> Solicitar Orçamento </a>
-                        </div>
-                    </div>
+                    <ol class="catalog-general">
+                        <li>
+                            <div class="wrap">
+                                <a href="javascript:;" class="btn btn-budget fleft noMargin" data-reveal-id="myModal"> Solicitar Orçamento </a>
+                            </div>
+                        </li>
 
-                    <div class="catalogo-general">
-                        <h3> Catálogo em PDF </h3>
-                        
-                        <div class="wrap">
-                            <a href="<?php echo $url ?>assets/pdf/Medidor-de-Vazao-Tipo-Rotametro-BL.pdf" title="Catálogo Rotâmetros modelo bl" target="_blank" class="btn"> Visualize Aqui </a>
-                            <a href="<?php echo $url ?>assets/pdf/Medidor-de-Vazao-Tipo-Rotametro-BL.pdf" title="Catálogo Rotâmetros modelo bl" download="Medidor-de-Vazao-Tipo-Rotametro-BL.pdf" class="btn"> Baixe Aqui </a>
+                        <li>
+                            <h3> Catálogo em PDF </h3>
                             
-                        </div>
-                    </div>
-                    <!-- catalogo-general-->
+                            <div class="wrap">
+                                <a href="<?php echo $url ?>assets/pdf/Medidor-de-Vazao-Tipo-Rotametro-BL.pdf" title="Catálogo Rotâmetros modelo bl" target="_blank" class="btn"> Visualize Aqui </a>
+                                <a href="<?php echo $url ?>assets/pdf/Medidor-de-Vazao-Tipo-Rotametro-BL.pdf" title="Catálogo Rotâmetros modelo bl" download="Medidor-de-Vazao-Tipo-Rotametro-BL.pdf" class="btn"> Baixe Aqui </a>
+                                
+                            </div>
+                        </li>
+                        <!-- catalog-general-->
 
-                    <div class="catalogo-general catalogo-manual">
-                        <h3> Manual </h3>
-                        
-                        <div class="wrap">
-                            <a href="<?php echo $url ?>assets/pdf/manuais/manual-de-montagem-bl-bli.pdf" title="Manual Rotâmetros modelo bl" target="_blank" class="btn"> Visualize Aqui </a>
-                            <a href="<?php echo $url ?>assets/pdf/manuais/manual-de-montagem-bl-bli.pdf" title="Manual Rotâmetros modelo bl" download="assets/pdf/manual-de-montagem-bl-bli.pdf" class="btn noMargin"> Baixe Aqui </a>
-                        </div>
-                    </div>
-                    <!-- catalogo-manual -->
+                        <li class="catalog-manual">
+                            <h3> Manual </h3>
+                            
+                            <div class="wrap">
+                                <a href="<?php echo $url ?>assets/pdf/manuais/manual-de-montagem-bl-bli.pdf" title="Manual Rotâmetros modelo bl" target="_blank" class="btn"> Visualize Aqui </a>
+                                <a href="<?php echo $url ?>assets/pdf/manuais/manual-de-montagem-bl-bli.pdf" title="Manual Rotâmetros modelo bl" download="assets/pdf/manual-de-montagem-bl-bli.pdf" class="btn noMargin"> Baixe Aqui </a>
+                            </div>
+                        </li>
+                    </ol>
+                    <!-- catalog-manual -->
 
                 </div>
-                
             </article>
         </section>
         <!-- products -->

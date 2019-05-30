@@ -39,7 +39,7 @@
         <?php include "inc/sidebar.php" ?>
 
         <section id="products">    
-            <article class="product">
+            <article class="product-list">
                 <img src="<?php echo $url ?>assets/img/rotametro.jpg" width="100" height="135" alt="rotametro" title="rotametro">
                 <div class="wrap">
                     <header>
@@ -60,7 +60,7 @@
                     </div>
                 </div>
             </article>
-            <article class="product">
+            <article class="product-list">
                 <img src="<?php echo $url ?>assets/img/rotametro.jpg" width="100" height="135" alt="rotametro" title="rotametro">
                 <div class="wrap">
                     <header>
@@ -81,7 +81,7 @@
                     </div>
                 </div>
             </article>
-            <article class="product">
+            <article class="product-list">
                 <img src="<?php echo $url ?>assets/img/rotametro.jpg" width="100" height="135" alt="rotametro" title="rotametro">
                 <div class="wrap">
                     <header>
