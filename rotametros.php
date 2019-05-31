@@ -35,7 +35,7 @@
         <hr class="separator-line">
     </div>
     
-    <div class="content center">
+    <div class="content grid-sidebar center">
         <?php include "inc/sidebar.php" ?>
 
         <section id="products">    

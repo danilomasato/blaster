@@ -6,12 +6,22 @@ Centraliza All
     margin: 0 auto;
 }
 
-.content {
-    display: grid;
+.content { 
     margin-top: 30px;
     margin-bottom: 40px;
+    
+}
+
+.grid-sidebar {
+    display: grid;
     grid-column-gap: 30px;
     grid-template-columns: 22% 75%;
+}
+
+.grid-representative #representative {
+    display: grid;
+    grid-column-gap: 30px;
+    grid-template-columns: 54% 43%;
 }
 
 #header {
@@ -106,6 +116,8 @@ Centraliza All
     box-sizing: border-box;
     background: #414f62;
     border-bottom: 2px solid #9e1c1c;
+    /*border-left: 1px solid #344152; */
+    /*border-right: 1px solid #344152; */
 }
 
 #nav li a[data-active='produtos']:after,
@@ -437,6 +449,30 @@ Centraliza All
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+#map-representative,
+#info-representative {
+    float: left;
+}
+
+#info-representative {
+    align-self: center;
+}
+
+#info-representative .title {
+    color: #283443;
+    font-size: 26px;
+}
+
+#info-representative .description {
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+#info-representative #map {
+    display: none;
 }
 
 @media screen and (min-width:1024px) {

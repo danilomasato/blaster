@@ -5,6 +5,7 @@
             this.bind();
             this.nav();
             this.sideBar();
+            this.representative();
             // t.budget();
             this.carousel();
         },
@@ -91,12 +92,17 @@
                 if (location.pathname.includes(item.getAttribute('data-active')) || index == products) {
                     item.classList.add('active');
 
-                    //Inseri title no breadcrumb. 
-                    if (title && breadcrumb) {
-                        breadcrumb.innerHTML = '» ' + title.innerText;
-                    }
-                }
+                    
+                } 
             });
+
+            //Inseri title no breadcrumb. 
+            if (title && breadcrumb && Array.isArray(products)) {
+                breadcrumb.innerHTML =  '» ' + title.innerText;
+            } else {
+                document.querySelector('.breadcrumb li:nth-child(1) > a').innerHTML += '» produtos'
+                breadcrumb.innerHTML = '» ' + '&nbsp;' + title.innerText;
+            }
         },
         budget: function(){
             var budget = $("#products-list > li .btn-budget");
@@ -119,6 +125,42 @@
                     }
                 });    
             }
+        },
+        representative: function () {
+            $("#map-representative area").on("click", function(e) {
+                console.log(this.getAttribute('alt'))
+                // var stateSelected = $(this).attr("alt"),
+                //         textDefault = "Nenhum representante cadastrado neste estado. <br> Entre em contato com a nossa matriz ligue: <br> (55) 11 (2548-1500) / (2691-1500) ou através da",
+                //         linkContact = "página de contato",
+                //         dataText = $(this).attr("data-text");
+
+                // if(dataText != undefined){
+
+                //     var tpl = "<h2 class='title'><strong>"+ stateSelected +"</strong></h2>";
+                //         tpl += "<span class='text'>"+ dataText +"</span>";
+
+                //     $("#representantes").fadeOut();
+         
+                //     setTimeout(function  (argument) {
+                //         $("#representantes").fadeIn().html(tpl);
+                //     }, 500);
+
+                // } else {
+
+                //     var tpl = "<h2 class='title'><strong>São Paulo (Matriz)</strong></h2>";
+                //         tpl += "<span class='text'>Rua Arnoldo Felmanas, 166 - Veleiros <br>São Paulo - SP - Brasil - CEP - 04774-010  <br><p><strong>TEL</strong>: (55) 11 2548-1500 / 2691-1500</p></span>";
+                //         tpl += "<a href='/contato.php' class='link-contato'>Entre em Contato</a>";
+
+                //     $("#representantes").fadeOut();
+         
+                //     setTimeout(function  (argument) {
+                //         $("#representantes").fadeIn().html(tpl);
+                //     }, 500);
+                    
+                // }
+
+                e.preventDefault();
+            });
         },
         carousel: function () {
 
